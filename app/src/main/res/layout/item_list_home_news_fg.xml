@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+        <ImageView
+            android:id="@+id/img_item_home_news_icon"
+            android:src="@mipmap/defaultpic"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <TextView
+                android:singleLine="true"
+                android:textSize="17sp"
+                android:textColor="#000000"
+                android:text="title"
+                android:layout_weight="1"
+                android:id="@+id/tv_item_home_news_title"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+            <TextView
+                android:singleLine="true"
+                android:textSize="15sp"
+                android:layout_weight="1"
+                android:text="content"
+                android:id="@+id/tv_item_home_news_content"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+            <TextView
+                android:textSize="12sp"
+                android:text="time"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:id="@+id/tv_item_home_news_time"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

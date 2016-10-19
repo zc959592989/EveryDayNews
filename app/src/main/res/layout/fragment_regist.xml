@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <EditText
+        android:hint="请输入正确的邮箱地址"
+        android:id="@+id/edt_regist_fragment_mail"
+        android:padding="2dp"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    <EditText
+        android:hint="请输入昵称"
+        android:id="@+id/edt_regist_fragment_name"
+        android:padding="2dp"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    <EditText
+        android:hint="请输入6-16位密码"
+        android:id="@+id/edt_regist_fragment_pwd"
+        android:padding="2dp"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    <Button
+        android:id="@+id/btn_regist_fragment_regist"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:text="注 册"
+        android:background="@drawable/login_selected"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    <CheckBox
+        android:id="@+id/ch_regist_fragment_agree"
+        android:layout_margin="10dp"
+        android:text="我同意“服务条款”和“网络用户隐私保护和个人信息利用政策”"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

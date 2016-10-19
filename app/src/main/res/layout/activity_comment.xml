@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingLeft="10dp"
+    android:orientation="vertical"
+    android:paddingRight="10dp"
+    android:paddingBottom="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <edu.feicui.view.XListView
+        android:id="@+id/lv_comment_activity"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+    <ImageView
+        android:background="#a9a9a9"
+        android:layout_width="match_parent"
+        android:layout_height="1px" />
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+        <android.support.design.widget.TextInputLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="55dp">
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edt_comment_activity_content"
+                android:hint="写评论"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </android.support.design.widget.TextInputLayout>
+        <ImageView
+            android:background="#ededed"
+            android:layout_width="1px"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:id="@+id/img_comment_activity_send_content"
+            android:src="@mipmap/send"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+    </LinearLayout>
+
+</LinearLayout>

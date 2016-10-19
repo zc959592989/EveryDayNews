@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:background="@mipmap/center_top_bg"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="140dp">
+        <ImageView
+            android:id="@+id/img_acount_photo"
+            android:layout_margin="10dp"
+            android:src="@mipmap/biz_pc_main_info_profile_avatar_bg_dark"
+            android:layout_width="90dp"
+            android:layout_height="90dp" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:textSize="25sp"
+                android:textColor="#ffffff"
+                android:text="我的名字"
+                android:id="@+id/tv_center_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_account_integration"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="#000000"
+                android:textSize="22sp"
+                android:text="积分：0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <TextView
+            android:id="@+id/tv_account_comnum"
+            android:gravity="center_vertical"
+            android:textSize="15sp"
+            android:text="跟帖统计"
+            android:textColor="#000000"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+        <ImageView
+            android:background="#a9a9a9"
+            android:layout_width="match_parent"
+            android:layout_height="2px" />
+        <TextView
+            android:textSize="15sp"
+            android:text="登陆日志"
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ListView
+            android:id="@+id/lv_account_activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:background="#a9a9a9"
+            android:layout_width="match_parent"
+            android:layout_height="2px" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_my_account_out_login"
+        android:textSize="18sp"
+        android:textColor="#ffffff"
+        android:text="退出登录"
+        android:layout_margin="10dp"
+        android:background="@drawable/login_selected"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+</LinearLayout>
