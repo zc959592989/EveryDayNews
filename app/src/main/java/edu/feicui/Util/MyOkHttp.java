@@ -21,7 +21,6 @@ import okhttp3.Response;
  */
 
 public class MyOkHttp {
-
     public static void get(Map<String,String> params,String url, final OnResponseListener onResponseListener){
        String finalUrl=url+ Utils.getUrl(params, Constants.GET_TYPE);
         /**
@@ -50,7 +49,7 @@ public class MyOkHttp {
         Set<String> set=params.keySet();//拿到所有映射中的键
         for (String key:set  //遍历set拿到所有key
              ) {
-           String value= params.get(key);//通过key拿到所有value
+            String value= params.get(key);//通过key拿到所有value
             builder.add(key,value);//每拿到一个键值对，就将该键值对add进builder中
         }
         FormBody body=builder.build();

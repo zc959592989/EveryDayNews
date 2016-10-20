@@ -11,9 +11,10 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.ProtocolException;
 import java.net.URL;
+import java.util.ArrayList;
 
 /**
- * Created by Administrator on 2016/9/22.
+ * Created by zhaoCe on 2016/9/22.
  */
 public class NetAsync extends AsyncTask<Request,Object,Response> {
     ProgressDialog mDialog;
